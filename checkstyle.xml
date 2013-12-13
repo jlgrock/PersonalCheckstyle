@@ -8,7 +8,9 @@
 	<property name="severity" value="warning" />
 	<module name="TreeWalker">
 		<module name="JavadocMethod">
+			<property name="allowMissingPropertyJavadoc" value="true" />
 			<property name="severity" value="error" />
+			<property name="scope" value="package" />
 			<property name="suppressLoadErrors" value="true" />
 		</module>
 		<module name="JavadocType">
@@ -19,6 +21,7 @@
 			<property name="severity" value="error" />
 		</module>
 		<module name="JavadocStyle">
+			<property name="checkFirstSentence" value="false" />
 			<property name="severity" value="error" />
 		</module>
 		<module name="ConstantName">
@@ -125,7 +128,7 @@
 			<metadata name="net.sf.eclipsecs.core.lastEnabledSeverity"
 				value="inherit" />
 		</module>
-		<module name="DoubleCheckedLocking" />
+		<!-- <module name="DoubleCheckedLocking" /> -->
 		<module name="EmptyStatement" />
 		<module name="EqualsHashCode" />
 		<module name="HiddenField">
@@ -138,6 +141,7 @@
 			<property name="severity" value="warning" />
 		</module>
 		<module name="RedundantThrows">
+			<property name="allowUnchecked" value="true" />
 			<property name="suppressLoadErrors" value="true" />
 		</module>
 		<module name="SimplifyBooleanExpression" />
@@ -176,7 +180,7 @@
 			<property name="severity" value="error" />
 		</module>
 		<module name="MissingCtor">
-			<property name="severity" value="warning" />
+			<property name="severity" value="ignore" />
 		</module>
 		<module name="NoClone">
 			<property name="severity" value="error" />
